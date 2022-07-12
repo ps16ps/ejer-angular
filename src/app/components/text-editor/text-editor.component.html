@@ -1,0 +1,11 @@
+<p>text-editor works!</p>
+
+<div>
+    <h1 (copy)="printMessage()">Hello {{ name }} </h1>
+    <input type="text" [placeholder]="message" [value]="name" (keyup)="updateName($event)">
+
+    <input type="text"[placeholder]= "message" [(ngModel)] ="name">
+    <button [disabled]="isDisabled" (click)="sayHello()">Submit</button>
+</div>
+
+
